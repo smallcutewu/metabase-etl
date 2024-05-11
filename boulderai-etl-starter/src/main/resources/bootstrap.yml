@@ -1,0 +1,21 @@
+#Spring配置
+spring:
+  #应用名
+  application:
+    name: metabase-sync-starter
+  #启动环境
+  profiles:
+    active: @spring.profiles.active@
+  cloud:
+    #注册中心
+    nacos:
+      discovery:
+        server-addr: http://nacos.eimos.com/
+        namespace: boulder-@spring.profiles.active@
+        group: ${NACOS_GROUP:LOCAL}
+
+      config:
+        server-addr: http://nacos.eimos.com/
+        file-extension: yaml   # 文件后缀名
+        namespace: boulder-@spring.profiles.active@
+        group: ${NACOS_GROUP:DEFAULT_GROUP}

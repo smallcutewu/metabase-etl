@@ -1,0 +1,69 @@
+#
+#server:
+#  port: 8799
+#
+#
+#spring:
+#  application:
+#    name: metabase-sync-starter
+#
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#
+#
+#
+#neo4jconfig:
+#  username: neo4j
+#  password: Zzh!@7465671 # 如果没有修改，默认密码为 neo4j
+#  uri: bolt://172.16.6.140:7687
+#  autoIndex: update
+#
+#postgres:
+#  url: jdbc:postgresql://172.16.5.66:5432/metabase
+#  user-name: postgres
+#  password: Zzh!@7465671
+#  driver-class-name: org.postgresql.Driver
+#  slot-name: metabase_slot
+#  decoder:  wal2json
+#  dbName: metabase
+#  jdbcUrl: jdbc:postgresql://172.16.5.66:5432/metabase?currentSchema=public
+#
+#  initialSize: 2
+#  minIdle: 2
+#  maxActive: 10
+#  maxWait: 60000
+#  timeBetweenEvictionRunsMillis: 60000
+#  minEvictableIdleTimeMillis: 300000
+#  validationQuery: SELECT '1'
+#  testWhileIdle: true
+#  testOnBorrow: false
+#  testOnReturn: false
+#  poolPreparedStatements: true
+#  maxPoolPreparedStatementPerConnectionSize: 20
+#  maxOpenPreparedStatements: 50
+#
+#pgwal:
+#  pipeWorkCount: 4
+#  slotName: metabase_slot
+#  waitMin: 100
+#  walReadTimeout: 20000
+#
+#
+#
+##logging:
+##  config: classpath:logback.xml
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
